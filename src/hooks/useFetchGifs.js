@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { getGifs } from "../helpers/getGifs";
 
 export const useFetchGifs = (category) => {
@@ -17,5 +16,5 @@ export const useFetchGifs = (category) => {
     });
   }, [category]);
 
-  return state; // O retorno state são os dados que estão no useState ==> {data: [], loading: true,}
+  return state; // { data:[], loading: true };
 };
